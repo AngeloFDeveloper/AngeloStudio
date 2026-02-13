@@ -44,7 +44,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f1f4fa;
+  --background-color: #F8FAFC;
   --surface-color: #ffffff;
 }
 
@@ -63,7 +63,7 @@
 .features .tabs-wrapper {
   background-color: var(--surface-color);
   border-radius: 20px;
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
   box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
