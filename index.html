@@ -60,7 +60,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="#contatos">Contactos</a>
+      <a class="cta-btn" href="#contatos">Contatos</a>
 
     </div>
   </header>
@@ -155,7 +155,7 @@
                   <h3>Arquitetura de Interface</h3>
                 </a>
                 <p>Criamos ambientes digitais pensados para melhorar a experiência do utilizador e transmitir confiança
-                  desde o primeiro contacto.</p>
+                  desde o primeiro contato.</p>
 
               </div>
 
@@ -403,7 +403,8 @@
                       </div>
                       <div class="feature-item">
                         <i class="bi bi-check-circle-fill"></i>
-                        <span>Formulário de contacto e integração com WhatsApp</span>
+                        <span>Formulário de conta
+                          to e integração com WhatsApp</span>
                       </div>
                     </div>
 
@@ -981,7 +982,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato </h2>
-        <p>Peça já o seu orçamento gratuito!</p>
+        <p>Peça já o seu orçamento gratuito</p>
       </div><!-- End Section Title -->
 
 
@@ -1045,16 +1046,16 @@
 
                 <div class="angelo-contact-group">
                   <input type="text" name="phone" id="angelo-phone" required>
-                  <label for="angelo-phone">Contacto</label>
+                  <label for="angelo-phone">Contato</label>
                 </div>
               </div>
 
               <div class="angelo-contact-toggle">
                 <input type="radio" id="angelo-novo" name="tipo" value="Website Novo" checked>
-                <label for="angelo-novo">Website Novo</label>
+                <label for="angelo-novo">Criar Website Novo</label>
 
                 <input type="radio" id="angelo-alterar" name="tipo" value="Alterar Website">
-                <label for="angelo-alterar">Alterar Website</label>
+                <label for="angelo-alterar">Alterar Website Antigo</label>
               </div>
 
               <div class="angelo-contact-group angelo-textarea">
@@ -1062,7 +1063,7 @@
                 <label for="angelo-message">Mensagem</label>
               </div>
 
-              <button class="angelo-contact-btn">Enviar Pedido</button>
+              <button class="angelo-contact-btn">Enviar Mensagem</button>
 
             </form>
           </div>
@@ -1094,12 +1095,15 @@
           /* Card minimal */
           .angelo-contact-card {
             width: 100%;
-            max-width: 820px;
+            max-width: 992px;
             padding: 70px 60px;
             border-radius: 24px;
             background: #ffffff;
-            border: 2px solid #f1f5f9;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 20px 60px color-mix(in srgb, var(--default-color), transparent 90%);
+            background-color: var(--surface-color);
+
+
+
           }
 
           /* Subtitle */
@@ -1187,6 +1191,7 @@
             display: flex;
             gap: 12px;
             margin: 10px 0 40px;
+
           }
 
           .angelo-contact-toggle input {
@@ -1204,6 +1209,7 @@
             font-size: 14px;
             color: #374151;
             transition: all 0.25s ease;
+            box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
           }
 
           .angelo-contact-toggle input:checked+label {
@@ -1226,6 +1232,10 @@
             color: #ffffff;
             background: #2563eb;
             transition: all 0.25s ease;
+            box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
+
+
+
           }
 
           .angelo-contact-btn:hover {
