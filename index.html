@@ -1028,7 +1028,7 @@
               </div> FIM DO FORMULARIO DE CONTATO ANTIGO -->
         <div class="angelo-contact-wrapper ">
           <div class="angelo-contact-card ">
-            <form data-netlify="true" action="" name="contato" method="POST">
+            <form data-netlify="true" action="" name="contato" method="POST" id="contactForm">
               <input type="hidden" name="form-name" value="contato">
 
               <!-- <p class="angelo-contact-subtitle">TEXTO TEXTO TEXTO TEXTO AQUi </p> -->
@@ -1246,6 +1246,52 @@
           .angelo-contact-btn:active {
             transform: translateY(0);
           }
+          .modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  animation: pop 0.3s ease;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
         </style>
 
     </section><!-- /Contact Section -->
@@ -1348,7 +1394,39 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <h2>Mensagem enviada!</h2>
+    <p>Obrigado pelo contacto. Responderei brevemente.</p>
+    <button id="closeModal">Fechar</button>
+  </div>
+</div>
+<script>
+const form = document.getElementById("contactForm");
+const modal = document.getElementById("successModal");
+const closeModal = document.getElementById("closeModal");
 
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(() => {
+    modal.classList.add("active");
+    form.reset();
+  })
+  .catch(() => alert("Erro ao enviar. Tente novamente."));
+});
+
+closeModal.addEventListener("click", function() {
+  modal.classList.remove("active");
+});
+</script>
 </body>
 
 </html>
