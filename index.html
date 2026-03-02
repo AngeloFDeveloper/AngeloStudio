@@ -1028,13 +1028,13 @@
               </div> FIM DO FORMULARIO DE CONTATO ANTIGO -->
         <div class="angelo-contact-wrapper ">
           <div class="angelo-contact-card ">
-            <form action="" method="POST">
-
+            <form data-netlify="true" action="" name="contato" method="POST">
+              <input type="hidden" name="form-name" value="contato">
 
               <!-- <p class="angelo-contact-subtitle">TEXTO TEXTO TEXTO TEXTO AQUi </p> -->
               <br>
               <div class="angelo-contact-group ">
-                <input type="text" name="fullname" id="angelo-fullname" required>
+                <input type="text" name="nome" id="angelo-fullname" required>
                 <label for="angelo-fullname">Nome Completo</label>
               </div>
 
@@ -1045,7 +1045,7 @@
                 </div>
 
                 <div class="angelo-contact-group">
-                  <input type="text" name="phone" id="angelo-phone" required>
+                  <input type="text" name="telemovel" id="angelo-phone" required>
                   <label for="angelo-phone">Contato</label>
                 </div>
               </div>
@@ -1063,7 +1063,7 @@
                 <label for="angelo-message">Mensagem</label>
               </div>
 
-              <button class="angelo-contact-btn">Enviar Mensagem</button>
+              <button type="submit" class="angelo-contact-btn">Enviar Mensagem</button>
 
             </form>
           </div>
