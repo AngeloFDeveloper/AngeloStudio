@@ -1246,21 +1246,18 @@
           .angelo-contact-btn:active {
             transform: translateY(0);
           }
-          .modal {
+        .modal {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.4);
-  display: flex;
+  display: none; /* escondido por padrão */
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease;
+  z-index: 9999;
 }
 
 .modal.active {
-  opacity: 1;
-  pointer-events: all;
+  display: flex; /* só aparece quando ativo */
 }
 
 .modal-content {
@@ -1273,26 +1270,13 @@
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   animation: pop 0.3s ease;
 }
-
-.modal-content h2 {
-  margin-bottom: 10px;
+.modal-content .angelo-contact-btn {
+  margin-top: 30px; /* ligeiramente menor que o do formulário, opcional */
 }
-
-.modal-content button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  background: #2563eb;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 @keyframes pop {
   from { transform: scale(0.9); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
-}
-        </style>
+}       </style>
 
     </section><!-- /Contact Section -->
 
@@ -1398,7 +1382,7 @@
   <div class="modal-content">
     <h2>Mensagem enviada!</h2>
     <p>Obrigado pelo contacto. Responderei brevemente.</p>
-    <button id="closeModal">Fechar</button>
+    <button id="closeModal" class="angelo-contact-btn">Fechar</button>
   </div>
 </div>
 <script>
@@ -1406,15 +1390,22 @@ const form = document.getElementById("contactForm");
 const modal = document.getElementById("successModal");
 const closeModal = document.getElementById("closeModal");
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  const formData = new FormData(form);
+  const data = new FormData(form);
+  const formObject = Object.fromEntries(data.entries());
 
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
+    body: encode(formObject)
   })
   .then(() => {
     modal.classList.add("active");
@@ -1423,8 +1414,16 @@ form.addEventListener("submit", function(e) {
   .catch(() => alert("Erro ao enviar. Tente novamente."));
 });
 
-closeModal.addEventListener("click", function() {
+// Fechar modal
+closeModal.addEventListener("click", () => {
   modal.classList.remove("active");
+});
+
+// Permitir fechar modal clicando fora do conteúdo
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
 });
 </script>
 </body>
