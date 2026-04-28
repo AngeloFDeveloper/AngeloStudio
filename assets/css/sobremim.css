@@ -1,0 +1,123 @@
+/* ============================================================
+   SOBRE MIM
+============================================================ */
+
+.about-me .about-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.about-me .about-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.about-me .about-badge {
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  background: var(--accent-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 60%);
+  font-family: var(--nav-font);
+}
+
+.about-me .about-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 12px;
+  font-family: var(--heading-font);
+}
+
+.about-me .about-lead {
+  font-size: 1.05rem;
+  color: var(--heading-color);
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.about-me .about-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.about-me .about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.about-me .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: var(--nav-font);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  transition: all 0.2s ease;
+}
+
+.about-me .skill-tag:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.about-me .about-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+  color: #ffffff;
+  border-radius: 6px;
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
+  transition: all 0.3s ease;
+}
+
+.about-me .about-cta:hover {
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--accent-color), transparent 60%);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .about-me .about-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-me .about-content h3 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+
+  .about-me .about-badge {
+    right: 20px;
+  }
+}

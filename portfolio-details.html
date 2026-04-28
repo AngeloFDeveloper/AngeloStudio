@@ -1,101 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Dewi Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Detalhes do Projeto - Ângelo Studio</title>
+  <meta name="description" content="Detalhes do projeto - Ângelo Studio, Web Developer no Porto.">
+  <meta name="keywords" content="web design portugal, criar website, freelancer web, desenvolvimento web porto, angelo studio">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/faviconangelo.svg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Ficheiros CSS extra -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Ficheiro CSS Principal -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Dewi
-  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- CSS Barra de Cookies -->
+  <link href="assets/css/cookies.css" rel="stylesheet">
+
 </head>
 
 <body class="portfolio-details-page">
 
+  <!-- Header igual ao index, com links a apontar para index.html -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Dewi</h1>
+        <img src="assets/img/angelostudio.png" alt="Ângelo Studio">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Início</a></li>
+          <li><a href="index.html#projetos">Projetos</a></li>
+          <li><a href="index.html#servicos">Serviços</a></li>
+          <li><a href="index.html#portfolio" class="active">Portfólio</a></li>
+          <li><a href="index.html#precos">Preços</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">Get Started</a>
+      <a class="cta-btn" href="index.html#contatos">Contatos</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+    <!-- Hero pequeno — igual ao estilo do site mas com dimensões da página interna -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/hero2.jpg);">
       <div class="container position-relative">
-        <h1>Portfolio Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>Detalhes do Projeto</h1>
+        <p>Conheça mais sobre este projeto desenvolvido pelo Ângelo Studio.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li><a href="index.html">Início</a></li>
+            <li class="current">Detalhes do Projeto</li>
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div><!-- /Hero pequeno -->
+
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
@@ -104,6 +84,7 @@
 
         <div class="row gy-4">
 
+          <!-- Slider de imagens do projeto -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
@@ -111,9 +92,7 @@
                 {
                   "loop": true,
                   "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
+                  "autoplay": { "delay": 5000 },
                   "slidesPerView": "auto",
                   "pagination": {
                     "el": ".swiper-pagination",
@@ -124,42 +103,42 @@
               </script>
 
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
+                  <img src="assets/img/portfolio/app-1.jpg" alt="Screenshot do projeto">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
+                  <img src="assets/img/portfolio/product-1.jpg" alt="Screenshot do projeto">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
+                  <img src="assets/img/portfolio/branding-1.jpg" alt="Screenshot do projeto">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
+                  <img src="assets/img/portfolio/books-1.jpg" alt="Screenshot do projeto">
                 </div>
-
               </div>
+
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
+          <!-- Informações do projeto -->
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
+              <h3>Informações do Projeto</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Categoria</strong>: Web Design</li>
+                <li><strong>Cliente</strong>: Empresa Exemplo</li>
+                <li><strong>Data</strong>: Janeiro 2025</li>
+                <li><strong>Website</strong>: <a href="#">www.exemplo.pt</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <h2>Sobre este projeto</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Website desenvolvido para uma pequena empresa local com o objetivo de criar uma presença digital moderna e profissional. O projeto incluiu design personalizado, otimização para mobile e integração de formulário de contacto.
+              </p>
+              <p>
+                O resultado foi um site rápido, responsivo e preparado para ser encontrado no Google — entregue em menos de 3 semanas.
               </p>
             </div>
           </div>
@@ -172,58 +151,59 @@
 
   </main>
 
+
+  <!-- Footer igual ao index -->
   <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
+
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Dewi</span>
+            <span class="sitename"><img width="200" src="assets/img/angelostudio.png" alt="Ângelo Studio"></span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p><strong>Email:</strong> <span><a href="mailto:angelo@angelostudio.pt">angelo@angelostudio.pt</a></span></p>
+            <p class="mt-3"><strong>Website:</strong> <span><a href="https://angelostudio.pt">www.angelostudio.pt</a></span></p><br>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/angelodevstudio"><i class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://pt.linkedin.com/in/angeloxfernandes"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Links de Navegação</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Início</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#projetos">Projetos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#servicos">Serviços</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio">Portfólio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#contatos">Contatos</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Os Nossos Serviços</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#servicos">Web Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#servicos">Desenvolvimento web</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#servicos">Marketing Digital</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#servicos">SEO - Otimização</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#servicos">Estratégia Online</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+          <h4>A Nossa Newsletter</h4>
+          <p>Conteúdo exclusivo sobre design e desenvolvimento online!</p>
+          <form action="" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscrever"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            <div class="sent-message">A tua subscrição foi enviada. Obrigado!</div>
           </form>
         </div>
 
@@ -231,17 +211,14 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright 2026.</span> <strong class="px-1 sitename">Ângelo Studio.</strong> <span>Todos os direitos reservados.</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        Desenvolvido por <a href="https://angelostudio.pt/">Ângelo Studio.</a>
       </div>
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -261,6 +238,43 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-banner-inner">
+      <div class="cookie-text">
+        <i class="bi bi-shield-lock"></i>
+        <p>Utilizamos cookies para melhorar a tua experiência. Ao continuar, aceitas a nossa <a href="#">Política de Privacidade</a>.</p>
+      </div>
+      <div class="cookie-actions">
+        <button id="cookie-reject" class="cookie-btn cookie-btn-outline">Rejeitar</button>
+        <button id="cookie-accept" class="cookie-btn cookie-btn-primary">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var COOKIE_KEY = 'angelo_cookie_consent';
+      var banner = document.getElementById('cookie-banner');
+
+      if (localStorage.getItem(COOKIE_KEY)) return;
+
+      setTimeout(function () {
+        banner.classList.add('visible');
+      }, 800);
+
+      document.getElementById('cookie-accept').addEventListener('click', function () {
+        localStorage.setItem(COOKIE_KEY, 'accepted');
+        banner.classList.remove('visible');
+      });
+
+      document.getElementById('cookie-reject').addEventListener('click', function () {
+        localStorage.setItem(COOKIE_KEY, 'rejected');
+        banner.classList.remove('visible');
+      });
+    })();
+  </script>
 
 </body>
 
