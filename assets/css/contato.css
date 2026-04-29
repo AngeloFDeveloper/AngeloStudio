@@ -1,0 +1,278 @@
+/* ============================================================
+   FORMULÁRIO DE PROPOSTA PERSONALIZADA
+============================================================ */
+
+/* Card principal — duas colunas */
+.pf-form-card {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  background: var(--surface-color);
+  border-radius: 24px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 90%);
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* — Coluna esquerda — */
+.pf-form-left {
+  padding: 48px 40px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pf-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  font-family: var(--nav-font);
+  width: fit-content;
+}
+
+.pf-form-badge i {
+  font-size: 0.85rem;
+}
+
+.pf-form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.25;
+  margin: 0;
+  font-family: var(--heading-font);
+}
+
+.pf-form-desc {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Steps */
+.pf-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pf-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.pf-step-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--nav-font);
+}
+
+.pf-step-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pf-step-text strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+.pf-step-text span {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  font-family: var(--default-font);
+}
+
+/* Contact links */
+.pf-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.pf-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  text-decoration: none;
+  font-family: var(--default-font);
+  transition: color 0.2s;
+}
+
+.pf-contact-link i {
+  color: var(--accent-color);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.pf-contact-link:hover {
+  color: var(--accent-color);
+}
+
+/* — Coluna direita — */
+.pf-form-right {
+  padding: 48px 44px;
+}
+
+/* Label de secção */
+.pf-field-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  font-family: var(--nav-font);
+  margin: 0 0 10px;
+}
+
+/* Toggle group — pills seleccionáveis */
+.pf-toggle-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.pf-toggle-group input[type="radio"] {
+  display: none;
+}
+
+.pf-toggle-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  background: color-mix(in srgb, var(--background-color), var(--default-color) 2%);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--nav-font);
+}
+
+.pf-toggle-group label:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.pf-toggle-group input[type="radio"]:checked + label {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--accent-color), transparent 65%);
+}
+
+.pf-toggle-group input[type="radio"]:checked + label .pf-price {
+  color: rgba(255,255,255,0.75);
+}
+
+.pf-price {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+/* Submit button */
+.pf-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--contrast-color);
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 65%);
+  transition: all 0.3s ease;
+  font-family: var(--nav-font);
+}
+
+.pf-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+
+.pf-submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .pf-form-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pf-form-left {
+    border-right: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+    padding: 36px 32px;
+  }
+
+  .pf-form-right {
+    padding: 36px 32px;
+  }
+
+  .pf-contact-links {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .pf-form-left {
+    padding: 28px 20px;
+  }
+
+  .pf-form-right {
+    padding: 28px 20px;
+  }
+
+  .pf-form-title {
+    font-size: 1.4rem;
+  }
+
+  .pf-toggle-group label {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .angelo-contact-row {
+    flex-direction: column;
+  }
+}

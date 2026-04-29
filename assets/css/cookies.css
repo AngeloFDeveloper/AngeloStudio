@@ -1,16 +1,17 @@
 .cookie-banner {
   position: fixed;
-  bottom: -120px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 9999;
   padding: 0 20px 20px;
-  transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(calc(100% + 24px));
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 
 .cookie-banner.visible {
-  bottom: 0;
+  transform: translateY(0);
   pointer-events: all;
 }
 

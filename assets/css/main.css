@@ -64,6 +64,7 @@
   background-color: var(--surface-color);
   border-radius: 20px;
   padding: 40px 40px 0px 40px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
   box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -101,7 +102,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
   height: auto;
@@ -118,7 +119,7 @@
   bottom: 0;
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
   opacity: 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: 1;
 }
 
@@ -139,7 +140,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 }
 
@@ -206,9 +207,9 @@
 }
 
 .features .nav-link:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: transparent;
-  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 78%);
 }
 
 .features .nav-link:hover::before {
@@ -389,7 +390,7 @@
   gap: 10px;
   text-decoration: none;
   border: none;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
@@ -439,9 +440,9 @@
   align-items: center;
   gap: 15px;
   box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 80%);
-  transform: translateY(20px);
+  transform: translateY(12px);
   opacity: 0;
-  animation: fadeInUp 0.8s ease 0.6s forwards;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
 }
 
 @media (max-width: 576px) {
@@ -1526,7 +1527,7 @@ section,
 }
 
 .services .img img {
-  transition: 0.6s;
+  transition: transform 0.7s ease-out;
 }
 
 .services .details {
@@ -1587,7 +1588,7 @@ section,
 }
 
 .services .service-item:hover .img img {
-  transform: scale(1.2);
+  transform: scale(1.06);
 }
 
 /*--------------------------------------------------------------
@@ -1763,7 +1764,7 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
 }
 
@@ -1989,7 +1990,7 @@ section,
 }
 
 .portfolio .portfolio-content:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*--------------------------------------------------------------
@@ -2463,9 +2464,9 @@ body {
 }
 
 .angelo-contact-group input:focus+label,
-.angelo-contact-group input:valid+label,
+.angelo-contact-group input:not(:placeholder-shown)+label,
 .angelo-contact-group textarea:focus+label,
-.angelo-contact-group textarea:valid+label {
+.angelo-contact-group textarea:not(:placeholder-shown)+label {
   top: 8px;
   font-size: 11px;
   letter-spacing: 0.05em;
@@ -2486,6 +2487,7 @@ body {
 
   .angelo-contact-row {
     flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -2543,7 +2545,7 @@ body {
 
 .angelo-contact-btn:hover {
   background: #000000cf;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .angelo-contact-btn:active {
@@ -2574,7 +2576,7 @@ body {
   width: 90%;
   max-width: 400px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  animation: pop 0.3s ease;
+  animation: pop 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .modal-content .angelo-contact-btn {
@@ -2584,7 +2586,7 @@ body {
 
 @keyframes pop {
   from {
-    transform: scale(0.9);
+    transform: scale(0.96);
     opacity: 0;
   }
 
@@ -2607,26 +2609,26 @@ body {
   padding: 40px 35px;
   box-shadow: 0 5px 30px color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.45s ease-out, box-shadow 0.45s ease-out;
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 2px solid transparent;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .pricing-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 50px color-mix(in srgb, var(--default-color), transparent 80%);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px color-mix(in srgb, var(--default-color), transparent 84%);
 }
 
 .pricing-featured {
   border-color: var(--accent-color);
-  transform: translateY(-8px);
-  box-shadow: 0 15px 50px color-mix(in srgb, var(--accent-color), transparent 75%);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px color-mix(in srgb, var(--accent-color), transparent 78%);
 }
 
 .pricing-featured:hover {
-  transform: translateY(-14px);
+  transform: translateY(-9px);
 }
 
 .pricing-badge {

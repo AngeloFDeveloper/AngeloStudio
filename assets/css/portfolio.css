@@ -31,18 +31,26 @@
   transform: scale(1.07);
 }
 
+.pf-cover-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
 .pf-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 50%, transparent 100%);
   transition: background 0.3s ease;
+  pointer-events: none;
 }
 
 .pf-item:hover .pf-overlay {
@@ -85,6 +93,7 @@
   opacity: 0;
   transform: translateY(8px);
   transition: all 0.3s ease;
+  pointer-events: all;
 }
 
 .pf-item:hover .pf-actions {
