@@ -34,7 +34,6 @@
   <!-- CSS Barra de Cookies e Sobre -->
   <link href="assets/css/cookies.css" rel="stylesheet">
   <link href="assets/css/sobremim.css" rel="stylesheet">
-  <link href="assets/css/portfolio.css" rel="stylesheet">
 
 </head>
 
@@ -356,7 +355,60 @@
 
     </section><!-- /Serviços Detalhado -->
 
-    
+    <section id="sobre" class="about-me section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre Mim</h2>
+        <p>A pessoa por trás do Ângelo Studio</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-5">
+
+          <!-- Foto -->
+          <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-delay="150">
+            <div class="about-img-wrapper">
+              <img src="assets/img/testimonials/angelostudiosobre.png" alt="Ângelo Fernandes" class="about-img">
+              <div class="about-badge">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="about-content">
+
+              <h3>Olá, sou o Ângelo.</h3>
+              <p class="about-lead">
+                Comecei a criar websites com um objetivo simples: ajudar pequenos negócios e projetos a terem uma
+                presença online profissional sem complicações.
+                <br><br> Gosto de acompanhar cada projeto de perto — desde a primeira ideia até ao lançamento —
+                garantindo que tudo faz sentido para o negócio do cliente.
+
+              <div class="about-skills">
+                <span class="skill-tag"><i class="bi bi-code-slash"></i> Desenvolvimento de Websites</span>
+                <span class="skill-tag"><i class="bi bi-filetype-js"></i> Presença Online</span>
+                <span class="skill-tag"><i class="bi bi-search"></i> SEO - Optimização Google</span>
+                <span class="skill-tag"><i class="bi bi-phone"></i> Design Responsivo</span>
+
+              </div>
+
+              <a href="#contatos" class="btn-primary about-cta">
+                Ver os meus projetos <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Sobre Mim -->
+
+
+
 
     <!-- ============================================================
          CARDS DE SERVIÇOS SIMPLES — comentado, disponível para reutilizar
@@ -513,7 +565,105 @@
     Fim dos PROJETOS SLIDE -->
 
 
-    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper testimonials-swiper">
+
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 5000, "disableOnInteraction": false },
+              "slidesPerView": 1,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".testimonials-swiper .swiper-button-next",
+                "prevEl": ".testimonials-swiper .swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <!-- Testemunho 1 — substitui pelo teu primeiro cliente real -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Ângelo Fernandes">
+                <h3>Ângelo Fernandes</h3>
+                <h4>Web Developer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Especializado no desenvolvimento de websites modernos, rápidos e otimizados, criados para ajudar
+                    negócios e projetos a construir uma presença online forte e profissional.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- /Testemunho 1 -->
+
+            <!-- Testemunho 2 — substitui pelo teu segundo cliente real -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Foto Perfil.png" class="testimonial-img" alt="Cliente">
+                <h3>Maria Silva</h3>
+                <h4>Proprietária — Restaurante O Garfo</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>O Ângelo transformou completamente a presença online do nosso restaurante. O site ficou
+                    exatamente como queríamos — moderno, fácil de usar e os clientes adoram. Recomendo a qualquer
+                    negócio.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- /Testemunho 2 -->
+
+            <!-- Testemunho 3 — substitui pelo teu terceiro cliente real -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Cliente">
+                <h3>João Costa</h3>
+                <h4>Fundador — Studio JC Fotografia</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Processo simples, comunicação clara e resultado acima das expectativas. O meu portfólio de
+                    fotografia nunca tinha parecido tão profissional. Entrega dentro do prazo e com total
+                    acompanhamento.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- /Testemunho 3 -->
+
+          </div><!-- /swiper-wrapper -->
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+
+        </div><!-- /swiper -->
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
 
     <!-- Portfólio -->
     <section id="portfolio" class="portfolio section" style="background-color: #0d0d0d; padding-bottom: 80px;">
@@ -666,25 +816,6 @@
               </div>
             </div>
 
-            <div class="row g-0 isotope-container pf-grid" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-app">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/sousaferreira.png" alt="Sousa & Ferreira Arquitetos">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Arquitetura</span>
-                    <h4>Sousa &amp; Ferreira Arquitetos</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/sousaferreira.png" title="Ver imagem" data-gallery="portfolio-gallery-app" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
           </div><!-- /isotope-container -->
 
         </div>
@@ -692,6 +823,147 @@
       </div>
 
     </section><!-- /Portfólio -->
+
+    <style>
+      /* ── Portfólio escuro fullscreen ── */
+      .pf-grid {
+        margin-top: 20px;
+      }
+
+      .pf-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 100%; /* quadrado perfeito */
+        cursor: pointer;
+      }
+
+      .col-lg-8 .pf-item {
+        height: 320px;
+      }
+
+      .pf-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.5s ease;
+        display: block;
+      }
+
+      .pf-item:hover img {
+        transform: scale(1.07);
+      }
+
+      .pf-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 50%, transparent 100%);
+        transition: background 0.3s ease;
+      }
+
+      .pf-item:hover .pf-overlay {
+        background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.1) 100%);
+      }
+
+      .pf-label {
+        padding: 20px 22px 16px;
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+      }
+
+      .pf-category {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-color);
+        background: rgba(37, 99, 235, 0.18);
+        border: 1px solid rgba(37, 99, 235, 0.4);
+        border-radius: 20px;
+        padding: 2px 10px;
+        margin-bottom: 6px;
+      }
+
+      .pf-label h4 {
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+        font-family: var(--heading-font);
+        line-height: 1.3;
+      }
+
+      .pf-actions {
+        display: flex;
+        gap: 10px;
+        padding: 0 22px 20px;
+        opacity: 0;
+        transform: translateY(8px);
+        transition: all 0.3s ease;
+      }
+
+      .pf-item:hover .pf-actions {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .pf-actions a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.15);
+        border: 1px solid rgba(255,255,255,0.3);
+        color: #ffffff;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+        backdrop-filter: blur(4px);
+      }
+
+      .pf-actions a:hover {
+        background: var(--accent-color);
+        border-color: var(--accent-color);
+        color: #ffffff;
+      }
+
+      /* Filtros sobre fundo escuro */
+      .pf-dark {
+        padding: 0 20px 24px !important;
+        justify-content: center;
+      }
+
+      .pf-dark li {
+        color: rgba(255,255,255,0.55) !important;
+        border-color: rgba(255,255,255,0.15) !important;
+      }
+
+      .pf-dark li:hover,
+      .pf-dark li.filter-active {
+        color: #ffffff !important;
+        background-color: var(--accent-color) !important;
+        border-color: var(--accent-color) !important;
+      }
+
+      @media (max-width: 768px) {
+        .pf-item {
+          padding-top: 80%; /* um pouco menos quadrado em mobile */
+        }
+      }
+    </style>
 
 
     <!-- Pricing Section -->
@@ -798,161 +1070,7 @@
         </div>
 
       </div>
-    </section><!-- Fim Preços Section -->
-
-<!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper testimonials-swiper">
-
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": { "delay": 5000, "disableOnInteraction": false },
-              "slidesPerView": 1,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".testimonials-swiper .swiper-button-next",
-                "prevEl": ".testimonials-swiper .swiper-button-prev"
-              }
-            }
-          </script>
-
-          <div class="swiper-wrapper">
-
-            <!-- Testemunho 1 — substitui pelo teu primeiro cliente real -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Ângelo Fernandes">
-                <h3>Ângelo Fernandes</h3>
-                <h4>Web Developer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Especializado no desenvolvimento de websites modernos, rápidos e otimizados, criados para ajudar
-                    negócios e projetos a construir uma presença online forte e profissional.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- /Testemunho 1 -->
-
-            <!-- Testemunho 2 — substitui pelo teu segundo cliente real -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/Foto Perfil.png" class="testimonial-img" alt="Cliente">
-                <h3>Maria Silva</h3>
-                <h4>Proprietária — Restaurante O Garfo</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>O Ângelo transformou completamente a presença online do nosso restaurante. O site ficou
-                    exatamente como queríamos — moderno, fácil de usar e os clientes adoram. Recomendo a qualquer
-                    negócio.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- /Testemunho 2 -->
-
-            <!-- Testemunho 3 — substitui pelo teu terceiro cliente real -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Cliente">
-                <h3>João Costa</h3>
-                <h4>Fundador — Studio JC Fotografia</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Processo simples, comunicação clara e resultado acima das expectativas. O meu portfólio de
-                    fotografia nunca tinha parecido tão profissional. Entrega dentro do prazo e com total
-                    acompanhamento.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- /Testemunho 3 -->
-
-          </div><!-- /swiper-wrapper -->
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-
-        </div><!-- /swiper -->
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Sobre Mim Section -->
-<section id="sobre" class="about-me section light-background">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sobre Mim</h2>
-        <p>A pessoa por trás do Ângelo Studio</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center gy-5">
-
-          <!-- Foto -->
-          <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-delay="150">
-            <div class="about-img-wrapper">
-              <img src="assets/img/testimonials/angelostudiosobre.png" alt="Ângelo Fernandes" class="about-img">
-              <div class="about-badge">
-                <i class="bi bi-patch-check-fill"></i>
-                <span>Web Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Texto -->
-          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
-            <div class="about-content">
-
-              <h3>Olá, sou o Ângelo.</h3>
-              <p class="about-lead">
-                Comecei a criar websites com um objetivo simples: ajudar pequenos negócios e projetos a terem uma
-                presença online profissional sem complicações.
-                <br><br> Gosto de acompanhar cada projeto de perto — desde a primeira ideia até ao lançamento —
-                garantindo que tudo faz sentido para o negócio do cliente.
-
-              <div class="about-skills">
-                <span class="skill-tag"><i class="bi bi-code-slash"></i> Desenvolvimento de Websites</span>
-                <span class="skill-tag"><i class="bi bi-filetype-js"></i> Presença Online</span>
-                <span class="skill-tag"><i class="bi bi-search"></i> SEO - Optimização Google</span>
-                <span class="skill-tag"><i class="bi bi-phone"></i> Design Responsivo</span>
-
-              </div>
-
-              <a href="#contatos" class="btn-primary about-cta">
-                Ver os meus projetos <i class="bi bi-arrow-right"></i>
-              </a>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Sobre Mim -->
-
-
+    </section><!-- /Pricing Section -->
 
 
     <!-- Contact Section -->

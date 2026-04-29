@@ -34,7 +34,6 @@
   <!-- CSS Barra de Cookies e Sobre -->
   <link href="assets/css/cookies.css" rel="stylesheet">
   <link href="assets/css/sobremim.css" rel="stylesheet">
-  <link href="assets/css/portfolio.css" rel="stylesheet">
 
 </head>
 
@@ -356,7 +355,60 @@
 
     </section><!-- /Serviços Detalhado -->
 
-    
+    <section id="sobre" class="about-me section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre Mim</h2>
+        <p>A pessoa por trás do Ângelo Studio</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-5">
+
+          <!-- Foto -->
+          <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-delay="150">
+            <div class="about-img-wrapper">
+              <img src="assets/img/testimonials/angelostudiosobre.png" alt="Ângelo Fernandes" class="about-img">
+              <div class="about-badge">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="about-content">
+
+              <h3>Olá, sou o Ângelo.</h3>
+              <p class="about-lead">
+                Comecei a criar websites com um objetivo simples: ajudar pequenos negócios e projetos a terem uma
+                presença online profissional sem complicações.
+                <br><br> Gosto de acompanhar cada projeto de perto — desde a primeira ideia até ao lançamento —
+                garantindo que tudo faz sentido para o negócio do cliente.
+
+              <div class="about-skills">
+                <span class="skill-tag"><i class="bi bi-code-slash"></i> Desenvolvimento de Websites</span>
+                <span class="skill-tag"><i class="bi bi-filetype-js"></i> Presença Online</span>
+                <span class="skill-tag"><i class="bi bi-search"></i> SEO - Optimização Google</span>
+                <span class="skill-tag"><i class="bi bi-phone"></i> Design Responsivo</span>
+
+              </div>
+
+              <a href="#contatos" class="btn-primary about-cta">
+                Ver os meus projetos <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Sobre Mim -->
+
+
+
 
     <!-- ============================================================
          CARDS DE SERVIÇOS SIMPLES — comentado, disponível para reutilizar
@@ -513,179 +565,303 @@
     Fim dos PROJETOS SLIDE -->
 
 
-    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
 
-    <!-- Portfólio -->
-    <section id="portfolio" class="portfolio section" style="background-color: #0d0d0d; padding-bottom: 80px;">
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
-      <div class="container section-title" data-aos="fade-up" style="padding-top: 60px;">
-        <h2 style="color: rgba(255,255,255,0.5);">Portfólio</h2>
-        <p style="color: #ffffff;">Todos os Projetos</p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper testimonials-swiper">
+
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 5000, "disableOnInteraction": false },
+              "slidesPerView": 1,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".testimonials-swiper .swiper-button-next",
+                "prevEl": ".testimonials-swiper .swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <!-- Testemunho 1 — substitui pelo teu primeiro cliente real -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Ângelo Fernandes">
+                <h3>Ângelo Fernandes</h3>
+                <h4>Web Developer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Especializado no desenvolvimento de websites modernos, rápidos e otimizados, criados para ajudar
+                    negócios e projetos a construir uma presença online forte e profissional.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- /Testemunho 1 -->
+
+            <!-- Testemunho 2 — substitui pelo teu segundo cliente real -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Foto Perfil.png" class="testimonial-img" alt="Cliente">
+                <h3>Maria Silva</h3>
+                <h4>Proprietária — Restaurante O Garfo</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>O Ângelo transformou completamente a presença online do nosso restaurante. O site ficou
+                    exatamente como queríamos — moderno, fácil de usar e os clientes adoram. Recomendo a qualquer
+                    negócio.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- /Testemunho 2 -->
+
+            <!-- Testemunho 3 — substitui pelo teu terceiro cliente real -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Cliente">
+                <h3>João Costa</h3>
+                <h4>Fundador — Studio JC Fotografia</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Processo simples, comunicação clara e resultado acima das expectativas. O meu portfólio de
+                    fotografia nunca tinha parecido tão profissional. Entrega dentro do prazo e com total
+                    acompanhamento.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- /Testemunho 3 -->
+
+          </div><!-- /swiper-wrapper -->
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+
+        </div><!-- /swiper -->
+
       </div>
 
-      <div class="container-fluid px-0">
+    </section><!-- /Testimonials Section -->
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
 
-          <!-- Filtros -->
-          <ul class="portfolio-filters isotope-filters pf-dark" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
+    <!-- Portfólio-->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfólio</h2>
+        <p>Todos os Projetos</p>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">Restauração</li>
             <li data-filter=".filter-product">Portfólio</li>
             <li data-filter=".filter-branding">Arquitetura</li>
             <li data-filter=".filter-books">Barbearia</li>
           </ul>
 
-          <div class="row g-0 isotope-container pf-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-app">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/sousaferreira.png" alt="Sousa & Ferreira Arquitetos">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Arquitetura</span>
-                    <h4>Sousa &amp; Ferreira Arquitetos</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/sousaferreira.png" title="Ver imagem" data-gallery="portfolio-gallery-app" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/sousaferreira.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Website Arquitetura</h4>
+                  <p>Sousa & Ferreira Arquitetos</p>
+                  <a href="assets/img/portfolio/sousaferreira.png" title="Escritório de Arquitetura" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-product">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/product-1.jpg" alt="Portfólio Fotografia">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Portfólio</span>
-                    <h4>Portfólio Fotografia</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/product-1.jpg" title="Ver imagem" data-gallery="portfolio-gallery-product" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-branding">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/branding-1.jpg" alt="Restaurante Central">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Restauração</span>
-                    <h4>Restaurante Central</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/branding-1.jpg" title="Ver imagem" data-gallery="portfolio-gallery-branding" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-books">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/books-1.jpg" alt="Barbearia Clássica Porto">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Barbearia</span>
-                    <h4>Barbearia Clássica Porto</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/books-1.jpg" title="Ver imagem" data-gallery="portfolio-gallery-book" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Books 1" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-app">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/app-2.jpg" alt="Café Vintage">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Restauração</span>
-                    <h4>Café Vintage</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/app-2.jpg" title="Ver imagem" data-gallery="portfolio-gallery-app" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-product">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/product-2.jpg" alt="Portfólio Design">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Portfólio</span>
-                    <h4>Portfólio Design</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/product-2.jpg" title="Ver imagem" data-gallery="portfolio-gallery-product" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-branding">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/branding-2.jpg" alt="Studio Arquitetura Norte">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Arquitetura</span>
-                    <h4>Studio Arquitetura Norte</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/branding-2.jpg" title="Ver imagem" data-gallery="portfolio-gallery-branding" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-books">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/books-2.jpg" alt="Barbearia Moderna">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Barbearia</span>
-                    <h4>Barbearia Moderna</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/books-2.jpg" title="Ver imagem" data-gallery="portfolio-gallery-book" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Books 2" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="row g-0 isotope-container pf-grid" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 col-12 portfolio-item isotope-item filter-app">
-              <div class="pf-item">
-                <img src="assets/img/portfolio/sousaferreira.png" alt="Sousa & Ferreira Arquitetos">
-                <div class="pf-overlay">
-                  <div class="pf-label">
-                    <span class="pf-category">Arquitetura</span>
-                    <h4>Sousa &amp; Ferreira Arquitetos</h4>
-                  </div>
-                  <div class="pf-actions">
-                    <a href="assets/img/portfolio/sousaferreira.png" title="Ver imagem" data-gallery="portfolio-gallery-app" class="glightbox"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="Ver projeto"><i class="bi bi-arrow-right"></i></a>
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
 
-          </div><!-- /isotope-container -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 3"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Books 3" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
@@ -798,161 +974,7 @@
         </div>
 
       </div>
-    </section><!-- Fim Preços Section -->
-
-<!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper testimonials-swiper">
-
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": { "delay": 5000, "disableOnInteraction": false },
-              "slidesPerView": 1,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".testimonials-swiper .swiper-button-next",
-                "prevEl": ".testimonials-swiper .swiper-button-prev"
-              }
-            }
-          </script>
-
-          <div class="swiper-wrapper">
-
-            <!-- Testemunho 1 — substitui pelo teu primeiro cliente real -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Ângelo Fernandes">
-                <h3>Ângelo Fernandes</h3>
-                <h4>Web Developer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Especializado no desenvolvimento de websites modernos, rápidos e otimizados, criados para ajudar
-                    negócios e projetos a construir uma presença online forte e profissional.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- /Testemunho 1 -->
-
-            <!-- Testemunho 2 — substitui pelo teu segundo cliente real -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/Foto Perfil.png" class="testimonial-img" alt="Cliente">
-                <h3>Maria Silva</h3>
-                <h4>Proprietária — Restaurante O Garfo</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>O Ângelo transformou completamente a presença online do nosso restaurante. O site ficou
-                    exatamente como queríamos — moderno, fácil de usar e os clientes adoram. Recomendo a qualquer
-                    negócio.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- /Testemunho 2 -->
-
-            <!-- Testemunho 3 — substitui pelo teu terceiro cliente real -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/angelofernandes.png" class="testimonial-img" alt="Cliente">
-                <h3>João Costa</h3>
-                <h4>Fundador — Studio JC Fotografia</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Processo simples, comunicação clara e resultado acima das expectativas. O meu portfólio de
-                    fotografia nunca tinha parecido tão profissional. Entrega dentro do prazo e com total
-                    acompanhamento.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- /Testemunho 3 -->
-
-          </div><!-- /swiper-wrapper -->
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-
-        </div><!-- /swiper -->
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Sobre Mim Section -->
-<section id="sobre" class="about-me section light-background">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sobre Mim</h2>
-        <p>A pessoa por trás do Ângelo Studio</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center gy-5">
-
-          <!-- Foto -->
-          <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-delay="150">
-            <div class="about-img-wrapper">
-              <img src="assets/img/testimonials/angelostudiosobre.png" alt="Ângelo Fernandes" class="about-img">
-              <div class="about-badge">
-                <i class="bi bi-patch-check-fill"></i>
-                <span>Web Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Texto -->
-          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
-            <div class="about-content">
-
-              <h3>Olá, sou o Ângelo.</h3>
-              <p class="about-lead">
-                Comecei a criar websites com um objetivo simples: ajudar pequenos negócios e projetos a terem uma
-                presença online profissional sem complicações.
-                <br><br> Gosto de acompanhar cada projeto de perto — desde a primeira ideia até ao lançamento —
-                garantindo que tudo faz sentido para o negócio do cliente.
-
-              <div class="about-skills">
-                <span class="skill-tag"><i class="bi bi-code-slash"></i> Desenvolvimento de Websites</span>
-                <span class="skill-tag"><i class="bi bi-filetype-js"></i> Presença Online</span>
-                <span class="skill-tag"><i class="bi bi-search"></i> SEO - Optimização Google</span>
-                <span class="skill-tag"><i class="bi bi-phone"></i> Design Responsivo</span>
-
-              </div>
-
-              <a href="#contatos" class="btn-primary about-cta">
-                Ver os meus projetos <i class="bi bi-arrow-right"></i>
-              </a>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Sobre Mim -->
-
-
+    </section><!-- /Pricing Section -->
 
 
     <!-- Contact Section -->
